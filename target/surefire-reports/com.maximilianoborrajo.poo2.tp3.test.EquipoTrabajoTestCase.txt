@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.maximilianoborrajo.poo2.tp3.test.EquipoTrabajoTestCase
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s -- in com.maximilianoborrajo.poo2.tp3.test.EquipoTrabajoTestCase
