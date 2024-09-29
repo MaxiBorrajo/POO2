@@ -8,7 +8,7 @@ package com.maximilianoborrajo.poo2.tp6.caso2;
  *
  * @author maxim
  */
-class Inmueble {
+public class Inmueble {
     String descripcion;
     String direccion;
     double valorFiscal;
