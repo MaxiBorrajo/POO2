@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.maximilianoborrajo.poo2.tp7.ejercicio6.PruebaAdapter
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s -- in com.maximilianoborrajo.poo2.tp7.ejercicio6.PruebaAdapter
