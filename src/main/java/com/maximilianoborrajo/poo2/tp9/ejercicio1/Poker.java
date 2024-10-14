@@ -7,6 +7,7 @@ package com.maximilianoborrajo.poo2.tp9.ejercicio1;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  *
@@ -14,10 +15,21 @@ import java.util.List;
  */
 public class Poker extends Jugada {
 
+    public Poker() {
+        super(3);
+    }
+
     @Override
-    boolean isJugada(List<String> carts) {
-        List<String> cartsNums = carts.stream().map(c -> c.length() == 3 ? c.substring(0, 2) : c.substring(0, 1)).toList();
+    public boolean isJugada(List<Carta> carts) {
+        List<Valor> cartsNums = carts.stream().map(c -> c.getValor()).toList();
         boolean fourWithSameNum = cartsNums.stream().anyMatch(i -> Collections.frequency(cartsNums, i) == 4);
+        return fourWithSameNum;
+    }
+
+    @Override
+    public double getValor(List<Carta> carts) {
+        List<Integer> cartsNums = carts.stream().map(c -> c.getValor().getValorCarta()).toList();
+        double fourWithSameNum = cartsNums.stream().filter(i -> Collections.frequency(cartsNums, i) == 4).mapToDouble(i -> i).sum();
         return fourWithSameNum;
     }
 

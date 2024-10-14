@@ -22,17 +22,31 @@ public class PokerStatus {
         jugadas.add(jugada);
     }
 
-    public String verificar(String carta1, String carta2, String carta3, String carta4, String carta5) {
-        List<String> carts = Arrays.asList(carta1, carta2, carta3, carta4, carta5);
+    public Jugada verificar(List<Carta> carts) {
 
-        String jugada = "Nada";
+        Jugada jugada = null;
         List<Jugada> jugadasRestantes = new ArrayList<>(jugadas);
-        while ("Nada".equals(jugada) && !jugadasRestantes.isEmpty()) {
+        while (jugada == null && !jugadasRestantes.isEmpty()) {
             jugada = jugadasRestantes.getFirst().verificar(carts);
             jugadasRestantes.removeFirst();
         }
 
         return jugada;
+    }
+
+    public Jugada jugadaGanadora(List<Carta> carts1, List<Carta> carts2) {
+        Jugada jugada1 = this.verificar(carts1);
+        Jugada jugada2 = this.verificar(carts2);
+
+        if (jugada1.ganaA(jugada2)) {
+            return jugada1;
+        }
+
+        if (jugada2.ganaA(jugada1)) {
+            return jugada2;
+        }
+
+        return jugada1.getValor(carts1) > jugada2.getValor(carts2) ? jugada1 : jugada2;
     }
 
 }

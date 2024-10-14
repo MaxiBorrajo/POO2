@@ -11,10 +11,25 @@ import java.util.List;
  * @author maxim
  */
 abstract public class Jugada {
+    int valor;
 
-    public String verificar(List<String> carts) {
-        return isJugada(carts) ? this.getClass().getSimpleName() : "Nada";
+    public double getValor() {
+        return valor;
+    }
+    
+    abstract public double getValor(List<Carta> carts);
+
+    public Jugada(int valor) {
+        this.valor = valor;
     }
 
-    abstract boolean isJugada(List<String> carts);
+    public Jugada verificar(List<Carta> carts) {
+        return isJugada(carts) ? this : null;
+    }
+
+    abstract public boolean isJugada(List<Carta> carts);
+    
+    public boolean ganaA(Jugada jugada){
+        return jugada == null || this.getValor() > jugada.getValor();
+    }
 }
