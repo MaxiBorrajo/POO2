@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.maximilianoborrajo.poo2.tp11.Ejercicio1Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.126 s -- in com.maximilianoborrajo.poo2.tp11.Ejercicio1Test
