@@ -2,19 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.maximilianoborrajo.poo2.tp11;
+package com.maximilianoborrajo.poo2.tp11.ejercicio1;
 
 /**
  *
  * @author maxim
  */
-public class PorPalabraClave extends CriterioSubscription {
+public class PorTitulo extends CriterioSubscription {
 
     @Override
     boolean cumple(Articulo articulo, String valueToCheck) {
-        return articulo.getPalabrasClaves().contains(valueToCheck);
+        return articulo.getTitulo().contains(valueToCheck);
     }
 
-
-    
 }

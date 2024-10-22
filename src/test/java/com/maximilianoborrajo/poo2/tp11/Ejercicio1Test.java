@@ -4,6 +4,12 @@
  */
 package com.maximilianoborrajo.poo2.tp11;
 
+import com.maximilianoborrajo.poo2.tp11.ejercicio1.PorAutor;
+import com.maximilianoborrajo.poo2.tp11.ejercicio1.Articulo;
+import com.maximilianoborrajo.poo2.tp11.ejercicio1.SistemaDeArticulos;
+import com.maximilianoborrajo.poo2.tp11.ejercicio1.PorPalabraClave;
+import com.maximilianoborrajo.poo2.tp11.ejercicio1.PorTitulo;
+import com.maximilianoborrajo.poo2.tp11.ejercicio1.Investigador;
 import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

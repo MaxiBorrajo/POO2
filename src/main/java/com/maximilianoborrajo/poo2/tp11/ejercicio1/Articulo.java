@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.maximilianoborrajo.poo2.tp11;
+package com.maximilianoborrajo.poo2.tp11.ejercicio1;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author maxim
  */
-class Articulo {
+public class Articulo {
     String titulo;
     List<String> autores;
     String filiacion;
